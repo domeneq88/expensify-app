@@ -1,10 +1,6 @@
 {
   "name": "expensify",
   "version": "1.0.0",
-  "engines": {
-    "node": "8.5.0",
-    "yarn": "1.x"
-  },
   "main": "index.js",
   "author": "DS",
   "license": "MIT",
@@ -14,7 +10,7 @@
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
-    "heroku-prebuild": "yarn run build:prod"
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
